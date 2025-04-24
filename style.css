@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.produto {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.produto h2 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.produto p {
+  color: green;
+  font-weight: bold;
+}
+
+.adicionar-carrinho {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.adicionar-carrinho:hover {
+  background-color: #218838;
+}
+
+#carrinho-container {
+  width: 300px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  margin-left: 20px;
+  text-align: center;
+  max-height: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#carrinho {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#carrinho li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.item-carrinho-topo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-carrinho-topo span {
+  flex: 1;
+  text-align: left;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.contador button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contador .remover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.contador .adicionar {
+  background-color: #28a745;
+  color: white;
+}
+
+.remover-item {
+  background-color: #ccc;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
